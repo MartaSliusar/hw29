@@ -23,7 +23,7 @@ class Rectangle:
         return Rectangle(width, height)
 
     def __str__(self):
-        return f" {Rectangle({self.width}, {self.height})}"
+        return f" {self.get_area()}"
 
 
 r1 = Rectangle(2, 4)
@@ -35,5 +35,4 @@ r3 = r1 + r2
 assert r3.get_area() == 26
 
 r4 = r1 * 4
-
 assert r4.get_area() == 32
